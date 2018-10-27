@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+html, body {
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1520264914976-a1ddb24d2114?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f3553a06e5e8d1129270bb3de873f651&auto=format&fit=crop&w=1350&q=80") no-repeat 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  -webkit-transition: background 0.1s smooth;
+  transition: background 0.1s smooth;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.time {
+  font-size: 5.5em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.date {
+  font-size: 3em;
+  font-family: 'Satisfy', cursive;
+  margin-top: -1em;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 35px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.top .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: right;
+}
+
+.top .right ul {
+  list-style-type: none;
+  margin-top: 0;
+}
+
+.top .right ul li {
+  display: inline-block;
+}
+
+.top .right ul li:first-of-type::after {
+  content: '|';
+  margin: 0 10px;
+}
+
+.top .right ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.top .right ul li a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+/*# sourceMappingURL=style.css.map */
