@@ -18,7 +18,10 @@ const date = document.querySelector('.date');
 
 function setCurrentTime() {
 	const now = new Date();
-	const minutes = now.getMinutes();
+	let minutes = now.getMinutes();
+	if (minutes < 10) {
+		minutes = `0${minutes}`;
+	}
 	const hourStandard = now.getHours() % 12 || 12;
 	const todaysDate = now.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' });
 	
